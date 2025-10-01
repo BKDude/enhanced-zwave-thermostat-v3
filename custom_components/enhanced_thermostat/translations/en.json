@@ -1,0 +1,55 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Enhanced Thermostat Setup",
+        "description": "Configure your enhanced thermostat with safety features, scheduling, and usage tracking.",
+        "data": {
+          "source_entity": "Source Climate Entity",
+          "name": "Friendly Name"
+        }
+      },
+      "safety": {
+        "title": "Safety Temperature Settings",
+        "description": "Configure safety temperature thresholds to prevent extreme conditions.",
+        "data": {
+          "safety_enabled": "Enable Safety Temperature",
+          "safety_min_temp": "Minimum Safety Temperature (°C)",
+          "safety_max_temp": "Maximum Safety Temperature (°C)",
+          "hysteresis": "Hysteresis (°C)"
+        }
+      },
+      "features": {
+        "title": "Feature Selection",
+        "description": "Choose which features to enable.",
+        "data": {
+          "schedule_enabled": "Enable Scheduling",
+          "tracking_enabled": "Enable Usage Tracking"
+        }
+      }
+    },
+    "error": {
+      "invalid_entity": "The selected entity is not a valid climate entity.",
+      "invalid_temp_range": "Maximum temperature must be greater than minimum temperature.",
+      "cannot_connect": "Cannot connect to the thermostat entity."
+    },
+    "abort": {
+      "already_configured": "This thermostat is already configured."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Enhanced Thermostat Options",
+        "data": {
+          "safety_enabled": "Enable Safety Temperature",
+          "safety_min_temp": "Minimum Safety Temperature (°C)",
+          "safety_max_temp": "Maximum Safety Temperature (°C)",
+          "hysteresis": "Hysteresis (°C)",
+          "schedule_enabled": "Enable Scheduling",
+          "tracking_enabled": "Enable Usage Tracking"
+        }
+      }
+    }
+  }
+}

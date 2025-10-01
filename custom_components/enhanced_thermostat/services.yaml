@@ -1,0 +1,132 @@
+set_schedule:
+  name: Set Schedule
+  description: Set the schedule for a specific day of the week.
+  target:
+    entity:
+      integration: enhanced_thermostat
+      domain: climate
+  fields:
+    day:
+      name: Day
+      description: Day of the week to set the schedule for.
+      required: true
+      selector:
+        select:
+          options:
+            - "monday"
+            - "tuesday"
+            - "wednesday"
+            - "thursday"
+            - "friday"
+            - "saturday"
+            - "sunday"
+    events:
+      name: Events
+      description: List of schedule events for the day.
+      required: true
+      example: '[{"time": "06:00", "mode": "heat", "temperature": 20}, {"time": "08:30", "mode": "off"}]'
+      selector:
+        object:
+
+clear_schedule:
+  name: Clear Schedule
+  description: Clear the schedule for a specific day or all days.
+  target:
+    entity:
+      integration: enhanced_thermostat
+      domain: climate
+  fields:
+    day:
+      name: Day
+      description: Day of the week to clear the schedule for. Leave empty to clear all days.
+      required: false
+      selector:
+        select:
+          options:
+            - "monday"
+            - "tuesday"
+            - "wednesday"
+            - "thursday"
+            - "friday"
+            - "saturday"
+            - "sunday"
+
+copy_schedule:
+  name: Copy Schedule
+  description: Copy the schedule from one day to another.
+  target:
+    entity:
+      integration: enhanced_thermostat
+      domain: climate
+  fields:
+    from_day:
+      name: From Day
+      description: Day to copy the schedule from.
+      required: true
+      selector:
+        select:
+          options:
+            - "monday"
+            - "tuesday"
+            - "wednesday"
+            - "thursday"
+            - "friday"
+            - "saturday"
+            - "sunday"
+    to_day:
+      name: To Day
+      description: Day to copy the schedule to.
+      required: true
+      selector:
+        select:
+          options:
+            - "monday"
+            - "tuesday"
+            - "wednesday"
+            - "thursday"
+            - "friday"
+            - "saturday"
+            - "sunday"
+
+set_override:
+  name: Set Override
+  description: Set a manual override that lasts until the next scheduled event.
+  target:
+    entity:
+      integration: enhanced_thermostat
+      domain: climate
+  fields:
+    until:
+      name: Until
+      description: Override until this time (ISO format datetime).
+      required: true
+      example: "2025-10-01T18:00:00"
+      selector:
+        datetime:
+
+clear_override:
+  name: Clear Override
+  description: Clear the current manual override.
+  target:
+    entity:
+      integration: enhanced_thermostat
+      domain: climate
+
+export_usage:
+  name: Export Usage
+  description: Export usage data as CSV.
+  target:
+    entity:
+      integration: enhanced_thermostat
+      domain: climate
+  fields:
+    days:
+      name: Days
+      description: Number of days of history to export.
+      required: false
+      default: 30
+      selector:
+        number:
+          min: 1
+          max: 90
+          mode: box

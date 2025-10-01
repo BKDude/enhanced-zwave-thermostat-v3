@@ -1,0 +1,12 @@
+{
+  "domain": "enhanced_thermostat",
+  "name": "Enhanced Z-Wave Thermostat",
+  "codeowners": ["@homeassistant"],
+  "config_flow": true,
+  "dependencies": [],
+  "documentation": "https://github.com/yourusername/enhanced-zwave-thermostat",
+  "iot_class": "local_polling",
+  "issue_tracker": "https://github.com/yourusername/enhanced-zwave-thermostat/issues",
+  "requirements": [],
+  "version": "1.0.0"
+}
