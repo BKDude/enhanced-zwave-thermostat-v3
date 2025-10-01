@@ -31,7 +31,7 @@ class EnhancedThermostatCoordinator(DataUpdateCoordinator):
             update_interval=timedelta(seconds=UPDATE_INTERVAL_SECONDS),
         )
         self.config_entry = entry
-        self.source_entity_id = entry.data[CONF_SOURCE_ENTITY]
+        self._source_entity_id = entry.data.get(CONF_SOURCE_ENTITY, "")
         self._schedule_data: dict[str, list[dict[str, Any]]] = {}
         self._override_until: str | None = None
         self._safety_triggered: bool = False
