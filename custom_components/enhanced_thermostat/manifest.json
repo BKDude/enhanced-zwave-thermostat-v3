@@ -1,7 +1,7 @@
 {
   "domain": "enhanced_thermostat",
   "name": "Enhanced Z-Wave Thermostat",
-  "codeowners": ["@homeassistant"],
+  "codeowners": ["@BKDude"],
   "config_flow": true,
   "dependencies": [],
   "documentation": "https://github.com/BKDude/enhanced-zwave-thermostat-v3",

@@ -1,9 +1,5 @@
 {
   "name": "Enhanced Z-Wave Thermostat",
-  "content_in_root": false,
-  "filename": "enhanced_thermostat",
-  "country": ["US", "CA", "GB", "DE", "FR", "IT", "ES", "AU", "NZ"],
-  "homeassistant": "2024.1.0",
   "render_readme": true,
-  "zip_release": true
+  "domains": ["climate", "sensor"]
 }
