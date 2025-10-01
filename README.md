@@ -1,8 +1,8 @@
 # Enhanced Z-Wave Thermostat for Home Assistant
 
 [![hacs_badge](https://img.shields.io/badge/HACS-Custom-orange.svg)](https://github.com/custom-components/hacs)
-[![GitHub release](https://img.shields.io/github/release/yourusername/enhanced-zwave-thermostat.svg)](https://github.com/yourusername/enhanced-zwave-thermostat/releases)
-[![License](https://img.shields.io/github/license/yourusername/enhanced-zwave-thermostat.svg)](LICENSE)
+[![GitHub release](https://img.shields.io/github/release/BKDude/enhanced-zwave-thermostat-v3.svg)](https://github.com/BKDude/enhanced-zwave-thermostat-v3/releases)
+[![License](https://img.shields.io/github/license/BKDude/enhanced-zwave-thermostat-v3.svg)](LICENSE)
 
 A powerful Home Assistant HACS integration that adds Nest-like features to any Z-Wave or Wi-Fi thermostat, including safety temperature monitoring, advanced scheduling, and usage tracking.
 
@@ -56,7 +56,7 @@ Sunday: 7:00 → 18°C (Heat), 22:00 → 15°C (Heat)
 2. Click on "Integrations"
 3. Click the three dots in the top right corner
 4. Select "Custom repositories"
-5. Add this repository URL: `https://github.com/yourusername/enhanced-zwave-thermostat`
+5. Add this repository URL: `https://github.com/BKDude/enhanced-zwave-thermostat-v3`
 6. Select category: "Integration"
 7. Click "Add"
 8. Search for "Enhanced Z-Wave Thermostat"
@@ -343,8 +343,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📧 Support
 
-- **Issues**: [GitHub Issues](https://github.com/yourusername/enhanced-zwave-thermostat/issues)
-- **Discussions**: [GitHub Discussions](https://github.com/yourusername/enhanced-zwave-thermostat/discussions)
+- **Issues**: [GitHub Issues](https://github.com/BKDude/enhanced-zwave-thermostat-v3/issues)
+- **Discussions**: [GitHub Discussions](https://github.com/BKDude/enhanced-zwave-thermostat-v3/discussions)
 - **Community**: [Home Assistant Forum](https://community.home-assistant.io/)
 
 ## ⭐ Star History

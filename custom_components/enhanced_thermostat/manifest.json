@@ -4,9 +4,9 @@
   "codeowners": ["@homeassistant"],
   "config_flow": true,
   "dependencies": [],
-  "documentation": "https://github.com/yourusername/enhanced-zwave-thermostat",
+  "documentation": "https://github.com/BKDude/enhanced-zwave-thermostat-v3",
   "iot_class": "local_polling",
-  "issue_tracker": "https://github.com/yourusername/enhanced-zwave-thermostat/issues",
+  "issue_tracker": "https://github.com/BKDude/enhanced-zwave-thermostat-v3/issues",
   "requirements": [],
   "version": "1.0.0"
 }
