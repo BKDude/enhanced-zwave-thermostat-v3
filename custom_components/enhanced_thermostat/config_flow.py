@@ -200,7 +200,7 @@ class EnhancedThermostatConfigFlow(config_entries.ConfigFlow, domain=DOMAIN):
         config_entry: config_entries.ConfigEntry,
     ) -> EnhancedThermostatOptionsFlow:
         """Get the options flow for this handler."""
-        return EnhancedThermostatOptionsFlow(config_entry)
+        return EnhancedThermostatOptionsFlow()
 
 
 class EnhancedThermostatOptionsFlow(config_entries.OptionsFlow):

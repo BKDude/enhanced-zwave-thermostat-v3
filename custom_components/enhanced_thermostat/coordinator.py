@@ -79,10 +79,13 @@ class EnhancedThermostatCoordinator(DataUpdateCoordinator):
     async def _async_update_data(self) -> dict[str, Any]:
         """Fetch data from source entity."""
         try:
-            source_state = self.hass.states.get(self.source_entity_id)
+            if not self._source_entity_id:
+                raise UpdateFailed("Source entity not configured")
+                
+            source_state = self.hass.states.get(self._source_entity_id)
             
             if source_state is None:
-                raise UpdateFailed(f"Source entity {self.source_entity_id} not found")
+                raise UpdateFailed(f"Source entity {self._source_entity_id} not found")
 
             return {
                 "state": source_state.state,
